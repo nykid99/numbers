@@ -10,13 +10,13 @@ do
 	if [ $((x%2)) -eq 0 ]
 	then
 	       	echo "$x even"
-		x=$[$x+1] 
+		x=$((x+1)) 
 	else
 		echo "$x odd"
-		x=$[$x+1]
+		x=$((x+1))
 	fi
 done
-if [ $(($posint%2)) -eq 0 ]
+if [ $((posint%2)) -eq 0 ]
 then
 	echo "$posint even"
 else
